@@ -28,7 +28,7 @@ function addProjectDetails(e) {
 
 	console.log("User clicked on project " + idNumber);
 
-	$.get("/project" + idNumber, addProjInfo);
+	$.get("/project/" + idNumber, addProjInfo);
 	console.log("Gettting URL for: /project/" + idNumber);
 }
 
