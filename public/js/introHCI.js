@@ -29,7 +29,7 @@ function addProjectDetails(e) {
 	console.log("User clicked on project " + idNumber);
 
 	$.get("/project" + idNumber, addProjInfo);
-	console.log("Calling URL for: /project/" + idNumber);
+	console.log("Gettting URL for: /project/" + idNumber);
 }
 
 
@@ -54,9 +54,9 @@ function randomizeColors(e) {
 function randomColors(result){
 	var hex = result['colors'];
 	var colors = hex['hex'];
-	$('body').css('background-color', colors[0]);
-	$('.thumbnail').css('background-color', colors[1]);
-	$('h1, h2, h3, h4, h5, h5').css('color', colors[2]);
-	$('p').css('color', colors[3]);
-	$('.project img').css('opacity', .75);
+$('body').css('background-color', colors[0]);
+$('.thumbnail').css('background-color', colors[1]);
+$('h1, h2, h3, h4, h5, h5').css('color', colors[2]);
+$('p').css('color', colors[3]);
+$('.project img').css('opacity', .75);
 }
